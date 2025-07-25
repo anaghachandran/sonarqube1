@@ -1,32 +1,21 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         
   <modelVersion>4.0.0</modelVersion>
-  <groupId>demo</groupId>
-  <artifactId>single-java</artifactId>
-  <version>1.0</version>
+  <groupId>com.example</groupId>
+  <artifactId>myapp902</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
 
-  <build>
-    <sourceDirectory>.</sourceDirectory>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.10.1</version>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
+  <name>MyApp1</name>
 
-      <!-- Optional: Sonar plugin config (use CLI config or .properties if you prefer) -->
-      <plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-        <version>5.1.0.4751</version>
-      </plugin>
-    </plugins>
-  </build>
-
+  <distributionManagement>
+    <repository>
+      <id>anaghachandran</id>
+      <url>https://maven.pkg.github.com/anaghachandran/sonarqube1
+</url>
+    </repository>
+  </distributionManagement>
 </project>
